@@ -366,3 +366,31 @@ header {
 #about-cards-wrapper-padding{
     padding: 140px 0px 0px 0px;
 }
+
+/* Testiminials Starts */
+
+#testimonials{
+    padding: 80px 0px 80px 0px;
+    background: var(--clr-secondary);
+}
+
+.testimonials-img-wrapper{
+    /* display: flex; */
+    padding:20px
+}
+
+.testimonials-img{
+    width: 114px;
+    height: 38px;
+    margin-inline: auto;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #585858 !important;
+}

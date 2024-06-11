@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css" />
 
     <!-- Swiper -->
-    <link rel="stylesheet" href="./plugins/swiper/swiper.bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -224,44 +224,95 @@
                     </div>
 
                     <!-- About Cards Wrapper -->
-                     <div class="about-cards-wrapper">
-                            <div class="about-card">
-                                    <div class="about-card-img">
-                                        <img src="./assets/images/about1.png" alt="">
-                                    </div>
-                                <h3 class="about-image-card-title">
-                                    Adriana Homolova
-                                </h3>
+                    <div class="about-cards-wrapper">
+                        <div class="about-card">
+                            <div class="about-card-img">
+                                <img src="./assets/images/about1.png" alt="">
                             </div>
-                            <div class="about-card">
-                                    <div class="about-card-img">
-                                        <img src="./assets/images/about2.png" alt="">
-                                    </div>
-                                <h3 class="about-image-card-title">
-                                    Karolis Granickas
-                                </h3>
+                            <h3 class="about-image-card-title">
+                                Adriana Homolova
+                            </h3>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-img">
+                                <img src="./assets/images/about2.png" alt="">
                             </div>
-                     </div>
+                            <h3 class="about-image-card-title">
+                                Karolis Granickas
+                            </h3>
+                        </div>
+                    </div>
 
                     <!-- About Cards Wrapper -->
-                     <div class="about-cards-wrapper" id="about-cards-wrapper-padding">
-                            <div class="about-card">
-                                    <div class="about-card-img">
-                                        <img src="./assets/images/about3.png" alt="">
-                                    </div>
-                                <h3 class="about-image-card-title">
-                                    Sandor Lederer
-                                </h3>
+                    <div class="about-cards-wrapper" id="about-cards-wrapper-padding">
+                        <div class="about-card">
+                            <div class="about-card-img">
+                                <img src="./assets/images/about3.png" alt="">
                             </div>
-                            <div class="about-card">
-                                    <div class="about-card-img">
-                                        <img src="./assets/images/about4.png" alt="">
-                                    </div>
-                                <h3 class="about-image-card-title">
-                                    Zara Montgomery
-                                </h3>
+                            <h3 class="about-image-card-title">
+                                Sandor Lederer
+                            </h3>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-card-img">
+                                <img src="./assets/images/about4.png" alt="">
                             </div>
-                     </div>
+                            <h3 class="about-image-card-title">
+                                Zara Montgomery
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Starts -->
+        <section id="testimonials">
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-img">
+                                <img src="./assets/testimonials/testi2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </section>
@@ -270,6 +321,38 @@
 
     <!-- Core JS -->
     <script src="./js/script.js"></script>
+
+    <!-- Swiper -->
+    <script src="./plugins/swiper/swiper.bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
