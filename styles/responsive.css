@@ -1,0 +1,64 @@
+/* Media Queries */
+
+@media (min-width: 320px) {
+    .container {
+        padding-inline: 2rem;
+        max-width: 320px;
+        /* border: 2px solid aquamarine; */
+    }
+}
+
+/* XS */
+@media (min-width: 475px) {
+    .container {
+        padding-inline: 2rem;
+        max-width: 475px;
+        /* border: 2px solid green; */
+    }
+}
+
+/* SM */
+@media (min-width: 640px) {
+    .container {
+        padding-inline: 2rem;
+        max-width: 640px;
+        /* border: 2px solid red; */
+    }
+
+}
+
+/* MD */
+@media (min-width: 768px) {
+    .container {
+        padding-inline: 2rem;
+        max-width: 768px;
+        /* border: 2px solid blue; */
+    }
+}
+
+/* XL */
+@media (min-width: 1280px) {
+    .container {
+        padding-inline: 2.5rem;
+        max-width: 1280px;
+        /* border: 2px solid firebrick; */
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        padding-inline: 2.5rem;
+        max-width: 1366px;
+        /* border: 2px solid antiquewhite; */
+    }
+}
+
+
+/* 2XL */
+@media (min-width: 1536px) {
+    .container {
+        padding-inline: 6rem;
+        max-width: 1536px;
+        /* border: 2px solid hotpink; */
+    }
+}
