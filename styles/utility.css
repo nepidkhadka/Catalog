@@ -38,7 +38,7 @@
 .section-top-wrapper{
   padding: 0px 32px 0px 32px;
   margin-inline: auto;
-  width: 768px;
+  max-width: 768px;
   flex-direction: column;
   text-align: center;
   display: flex;
