@@ -20,6 +20,15 @@
   justify-content: space-between;
 }
 
+/* Buttons */
+
+.action-btn {
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  color: #1D6FA3;
+}
+
 /* Section */
 
 .section{
@@ -28,9 +37,6 @@
 
 .section-top-wrapper{
   padding: 0px 32px 0px 32px;
-}
-
-.section-top-wrapper{
   margin-inline: auto;
   width: 768px;
   flex-direction: column;
