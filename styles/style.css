@@ -73,7 +73,7 @@ header {
 }
 
 .header-wrapper {
-    padding: 20px;
+    padding-block: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,9 +110,8 @@ header {
 }
 
 .menu-bar {
-    color: var(--clr-white);
-    display: flex;
-    gap: 40px;
+    display: none;
+
 }
 
 .menu-bar li a {
@@ -191,8 +190,44 @@ header {
     margin-top: 8px;
 }
 
+.header-search{
+    display: none;
+}
+
 .header-search i {
     color: var(--clr-white);
+}
+
+/* -- Hamburger Icon */
+
+.mbl-menu-icon {
+    display: flex;
+    gap: 0.6rem;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.line {
+    width: 35px;
+    height: 1.8px;
+    background: var(--clr-white);
+    transition: 0.4s;
+}
+
+.line1.rotate {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line3.rotate {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.line2.rotate {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Hero Starts */
@@ -254,9 +289,7 @@ header {
 }
 
 .campaign-card {
-    flex: 1 0 352px;
-    min-width: 352px;
-    /* height: 597px; */
+    flex: 1 0 300px;
     border-radius: 20px;
     background: var(--clr-white);
 }
@@ -323,11 +356,14 @@ header {
 
 .about-content-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .section-side-wrapper {
-    flex-basis: 35%;
+    flex: 1 1 300px;  
 }
 
 .about-cards-wrapper {
@@ -336,8 +372,8 @@ header {
     gap: 40px;
 }
 
+
 .about-card-img {
-    width: 328px;
     height: 415px;
     overflow: hidden;
     border-radius: 16px;
@@ -362,9 +398,7 @@ header {
     margin-top: 15px;
 }
 
-#about-cards-wrapper-padding{
-    padding: 140px 0px 0px 0px;
-}
+
 
 /* Testiminials Starts */
 
@@ -440,3 +474,49 @@ header {
     color: #505258;
     line-height: 24px;
 }
+
+
+/* Resources Starts */
+
+#resources{
+    background: var(--clr-secondary);
+  }
+
+  .resources-cards-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+
+  .resource-card{
+    flex: 1 1 352px;
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .resources-img-title-wrapper{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resource-card-img{
+    height: 64px;
+    width: 64px;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+  }
+
+  .resource-card-title{
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
