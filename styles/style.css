@@ -215,7 +215,6 @@ header {
 .hero-title {
     font-size: 6rem;
     font-weight: 600;
-    white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -255,15 +254,15 @@ header {
 }
 
 .campaign-card {
-    width: 352px;
-    height: 597px;
+    flex: 1 0 352px;
+    min-width: 352px;
+    /* height: 597px; */
     border-radius: 20px;
     background: var(--clr-white);
 }
 
 .card-img {
     height: 352px;
-    width: 352px;
 
     & img {
         border-top-left-radius: 20px;
@@ -280,7 +279,7 @@ header {
     gap: 20px;
     width: 80%;
     margin-inline: auto;
-    margin-top: 20px;
+    margin-block: 30px;
 }
 
 .card-content .card-title {
