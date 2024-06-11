@@ -82,6 +82,12 @@
     .about-content-wrapper {
         flex-direction: row;
     }
+
+    /* Contact Form */
+    .name-wrapper{
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
      
 }
 
