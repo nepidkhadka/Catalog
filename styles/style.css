@@ -109,9 +109,27 @@ header {
     align-items: center;
 }
 
-.menu-bar {
-    display: none;
+.header-menu{
+    position: relative;
+}
 
+.menu-bar{
+    display: none;
+}
+
+.menu-bar.mblopen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #252525;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 10;
 }
 
 .menu-bar li a {
@@ -147,9 +165,9 @@ header {
     border-radius: 8px;
     margin-top: 2px;
     position: absolute;
-    left: 0;
+    left: -20px;
     padding: 24px 20px 24px 20px;
-    width: 412px;
+    width: 350px;
     background: var(--clr-white);
     display: flex;
     flex-direction: column;
@@ -206,6 +224,7 @@ header {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    z-index: 10;
 }
 
 .line {
@@ -243,17 +262,17 @@ header {
     text-align: center;
     display: grid;
     gap: 48px;
-    width: 100%;
     color: var(--clr-white);
+    width: 320px;
 }
 
 .hero-title {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 .hero-subtitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #E3E3E3;
 }
@@ -269,7 +288,7 @@ header {
     background: rgb(227, 227, 227, 10%);
 
     & i {
-        margin-left: 8px;
+        margin-left: 4px;
     }
 }
 

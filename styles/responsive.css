@@ -44,10 +44,35 @@
         display: block;
     }
 
+    .hero-content {
+        width: 500px;
+    }
+    
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+
     .menu-bar {
         color: var(--clr-white);
         display: flex;
         gap: 40px;
+    }
+
+    .menu-bar.mblopen {
+        position: relative;
+        height: auto;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .close-btn{
+        display: none;
     }
 
     .about-card-img {
@@ -57,9 +82,7 @@
     .about-content-wrapper {
         flex-direction: row;
     }
-
-  
-   
+     
 }
 
 /* XL */
@@ -71,6 +94,14 @@
 
     .section {
         padding: 60px;
+    }
+
+    .hero-content {
+        width: 800px;
+    }
+
+    .hero-title {
+        font-size: 6rem;
     }
 
     #about-cards-wrapper-padding{

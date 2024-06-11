@@ -1,3 +1,22 @@
+// Mobile
+
+const hamburgericon = document.querySelector(".mbl-menu-icon");
+const line = document.querySelectorAll(".line");
+const mblmenuitems = document.querySelector(".menu-bar");
+const overlay = document.querySelector(".overlay");
+
+
+// Hamburger Click Event
+hamburgericon.addEventListener("click", () => {
+  if (screen.width < 768) {
+    line.forEach(line=>line.classList.toggle("rotate"))
+    mblmenuitems.classList.toggle("mblopen");
+    overlay.classList.toggle("active");
+  }
+});
+
+
+// News
 const newscardswrapper = document.querySelector(".news-cards-wrapper");
 
 let newsdata = [];

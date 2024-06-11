@@ -66,3 +66,20 @@
   border: 1px solid #1D6FA3;
   font-weight: 700;
 }
+
+/* Overlay */
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  z-index: 1;
+}
+
+.overlay.active{
+ display: block;
+}
