@@ -755,3 +755,60 @@ header {
     pointer-events: all;  
 }
 
+/* Search Bar */
+
+.search-bar-wrapper{
+    display: none;
+}
+
+.search-bar-wrapper.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    padding: 1rem 0;
+}
+
+.search-form{
+    width: 280px;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    background: var(--clr-white);
+    position: relative;
+
+    & i{
+        color: #62696F;
+    }
+}
+
+.search-bar-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 6px;
+}
+
+.searchbar-close{
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    padding-inline: 4px;
+    padding-block: 3px;
+    background: var(--clr-white);
+    position: absolute;
+    right: -16px;
+    top: -12px;
+
+    & i{
+        font-size: 1rem;
+    }
+}

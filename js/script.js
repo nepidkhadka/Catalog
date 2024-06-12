@@ -4,6 +4,9 @@ const hamburgericon = document.querySelector(".mbl-menu-icon");
 const line = document.querySelectorAll(".line");
 const mblmenuitems = document.querySelector(".menu-bar");
 const overlay = document.querySelector(".overlay");
+const headersearch = document.querySelector(".header-search");
+const searchbarwrapper = document.querySelector(".search-bar-wrapper");
+const searchbarclose = document.querySelector(".searchbar-close");
 
 
 // Hamburger Click Event
@@ -79,3 +82,13 @@ arrow.addEventListener("click", () => {
 window.addEventListener("scroll", function () {
 arrow.classList.toggle("visible", window.scrollY > 1200);
 });
+
+// Search Bar
+
+headersearch.addEventListener("click", ()=>{
+  searchbarwrapper.classList.add("active")
+})
+
+searchbarclose.addEventListener("click", ()=>{
+  searchbarwrapper.classList.remove("active")
+})

@@ -50,6 +50,7 @@
     }
 
     .header-search {
+        cursor: pointer;
         display: block;
     }
 
@@ -114,6 +115,10 @@
         flex-wrap: nowrap;
         gap: 0;
     }
+
+    .search-form{
+        width: 380px;
+    }
      
 }
 
@@ -155,6 +160,10 @@
 
     .resources-cards-wrapper{
         flex-wrap: nowrap;
+    }
+
+    .search-form{
+        width: 450px;
     }
 }
 
