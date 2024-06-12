@@ -52,6 +52,8 @@
     .header-search {
         cursor: pointer;
         display: block;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
     .hero-content {

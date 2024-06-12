@@ -221,7 +221,8 @@ header {
 }
 
 .header-search {
-    display: none;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .header-search i {
