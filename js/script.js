@@ -9,9 +9,24 @@ const overlay = document.querySelector(".overlay");
 // Hamburger Click Event
 hamburgericon.addEventListener("click", () => {
   if (screen.width < 768) {
-    line.forEach(line=>line.classList.toggle("rotate"))
+    line.forEach(line => line.classList.toggle("rotate"));
     mblmenuitems.classList.toggle("mblopen");
-    overlay.classList.toggle("active");
+
+    if (mblmenuitems.classList.contains("mblopen") && screen.width < 768) {
+      overlay.classList.add("active");
+    } else {
+      overlay.classList.remove("active");
+    }
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    overlay.classList.remove("active");
+  } else {
+    if (mblmenuitems.classList.contains("mblopen")) {
+      overlay.classList.add("active");
+    }
   }
 });
 

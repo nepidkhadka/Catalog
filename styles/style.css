@@ -147,6 +147,7 @@ header {
 
     &:hover {
         .drop-items {
+            display: flex;
             opacity: 1;
             visibility: visible;
             pointer-events: all;
@@ -169,10 +170,10 @@ header {
     padding: 24px 20px 24px 20px;
     width: 350px;
     background: var(--clr-white);
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 40px;
-    visibility: none;
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease-in-out;
