@@ -87,6 +87,17 @@ header {
 }
 
 .header-logo {
+    height: 30px;
+    width: 30px;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* .header-logo {
     height: 44px;
     width: 44px;
 
@@ -95,7 +106,7 @@ header {
         width: 100%;
         object-fit: contain;
     }
-}
+} */
 
 .logo-text {
     font-size: var(--text-2xl);
