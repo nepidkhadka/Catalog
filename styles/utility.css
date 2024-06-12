@@ -27,6 +27,12 @@
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
   color: #1D6FA3;
+  transition: 0.2s linear;
+
+  &:hover{
+    opacity: 0.6;
+    transform: translateX(4px);
+  }
 }
 
 /* Section */
