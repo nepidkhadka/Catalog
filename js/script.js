@@ -67,3 +67,15 @@ const renderNews = () => {
 };
 
 fetchnews();
+
+
+// Back to TOP
+
+let arrow = document.querySelector(".backtotop");
+arrow.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener("scroll", function () {
+arrow.classList.toggle("visible", window.scrollY > 1200);
+});
