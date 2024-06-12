@@ -50,6 +50,7 @@
 
     .hero-content {
         width: 500px;
+        gap: 30px;
     }
     
     .hero-title {
@@ -79,9 +80,7 @@
         display: none;
     }
 
-    .about-card-img {
-        width: 328px;
-    }
+  
 
     .about-content-wrapper {
         flex-direction: row;
@@ -126,10 +125,23 @@
 
     .hero-content {
         width: 800px;
+        gap: 48px;
     }
 
     .hero-title {
         font-size: 6rem;
+    }
+
+    .about-cards-wrapper {
+        flex-grow: 0;
+    }
+
+    .section-side-wrapper {
+        flex: 1 1 300px;
+    }
+
+      .about-card-img {
+        width: 300px;
     }
 
     #about-cards-wrapper-padding{
