@@ -88,6 +88,24 @@
         flex-wrap: nowrap;
         gap: 40px;
     }
+
+    /* Footer */
+
+    .footer-main{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    .footer-left-wrapper{
+        flex-basis: 30%;
+    }
+    
+    .footer-right-wrapper{
+        flex-basis: 50%;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
      
 }
 
