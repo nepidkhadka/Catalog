@@ -35,6 +35,10 @@
         max-width: 768px;
     }
 
+    .section {
+        padding: 50px;
+    }
+
     /* -- Hamburger Icon */
     .mbl-menu-icon {
         display: none;
