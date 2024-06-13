@@ -59,7 +59,7 @@ const renderNews = () => {
 
     newselement.innerHTML = `
       <div class="news-card-img">
-        <img src="${news.image}" alt="">
+        <img src="${news.image}" alt="${news.title}">
       </div>
       <h3 class="news-card-title">${news.title.slice(0, 40)+"..."}</h3>
       <p class="news-card-desc">${news.content.slice(0, 120)+"..."}</p>
